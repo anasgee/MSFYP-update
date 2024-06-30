@@ -1,0 +1,48 @@
+.plagiarism{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    /* background: #ffffff; */
+
+}
+.innerDiv{
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+  
+ 
+  .dropzone {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    margin: 20px auto;
+
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #6c757d;
+  }
+  
+  pre {
+    text-align: left;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

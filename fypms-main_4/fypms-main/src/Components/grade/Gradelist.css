@@ -1,0 +1,56 @@
+.grading-system {
+    margin: 20px;
+  }
+  
+  .grading_form {
+    margin-bottom: 20px;
+  }
+  
+  .grading_form div {
+    margin-bottom: 10px;
+  }
+  
+  .grading_form input,
+  .grading_form select {
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  .student-item-main {
+    margin-top: 20px;
+  }
+  
+  .student-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .grade.list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .grade.list li {
+    margin: 5px 0;
+  }
+  
+  .student-item button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
