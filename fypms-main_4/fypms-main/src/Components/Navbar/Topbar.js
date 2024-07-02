@@ -52,18 +52,7 @@ const Topbar = (props) => {
     window.location.reload();
   };
 
-  // Function to get role text based on user role
-  const getRoleText = (role) => {
-    if (role === "teacher") {
-      return "Teacher";
-    } else if (role === "student") {
-      return "Student";
-    } else if (role === "admin") {
-      return "Admin";
-    } else {
-      return "";
-    }
-  };
+
 
   return (
     <div className={classes.container}>

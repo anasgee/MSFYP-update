@@ -12,7 +12,7 @@ const UpdateGrades = ({ student }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.put(`http://localhost:5000/students/${student._id}/grades`, grades);
+    await axios.put(`http://localhost:8000/students/${student._id}/grades`, grades);
     alert("Grades updated!");
   };
 

@@ -80,15 +80,7 @@ const ScheduleForm = ({ userId }) => { // Assuming you pass userId as a prop
         }
     };
 
-    // const handleUpdate = async () => {
-    //     try {
-    //         const response = await axios.put('http://localhost:5000/api/schedule', { teacherId: userId, availability });
-    //         setSchedule(response.data);
-    //         toast.success('Schedule updated!');
-    //     } catch (error) {
-    //         handleError(error);
-    //     }
-    // };
+ 
 
     const handleDelete = async () => {
         try {
@@ -125,20 +117,21 @@ const ScheduleForm = ({ userId }) => { // Assuming you pass userId as a prop
     };
 
     return (
+       
         <div className='main_Div'>
             <div className='search'>
-                <input
+                <input className='input'
                     type="text"
                     value={searchTeacher}
                     onChange={(e) => setSearchTeacher(e.target.value)}
                     placeholder="Search Teacher Name"
                 />
-                <button onClick={handleSearch}>Search</button>
-            </div>
+                <button className='buttons'  onClick={handleSearch}>Search</button>
+           
             <form onSubmit={handleSubmit}>
-                <div>
+                <div className='d-flex flex-column w-100 mx-0'>
                     <label>Teacher Name:</label>
-                    <input 
+                    <input className='teacherInput'
                         type="text" 
                         value={teacher} 
                         onChange={(e) => setTeacher(e.target.value)} 
@@ -180,14 +173,12 @@ const ScheduleForm = ({ userId }) => { // Assuming you pass userId as a prop
                         </div>
                     ))}
                 </div>
-                <button type="submit">Save Schedule</button>
-                {schedule && (
-                    <div className='buttons'>
-                        <button type="button" onClick={handleDelete}>Delete Schedule</button>
-                    </div>
-                )}
+              
+                <button className='buttons' type="submit">Save Schedule</button>
+                
             </form>
             <ToastContainer />
+        </div>
         </div>
     );
 };

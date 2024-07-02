@@ -7,6 +7,8 @@
 .form {
   display: flex;
   align-items: center;
+  flex-direction: row;
+  background: none;
 }
 
 .form button {
@@ -17,4 +19,5 @@
 .input button {
   color: blueviolet;
   cursor: pointer;
+  display: flex;
 }

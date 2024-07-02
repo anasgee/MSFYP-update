@@ -21,7 +21,7 @@ const ViewGrades = ({ rollNumber }) => {
     };
 
     fetchGrades();
-  }, [rollNumber]);
+  }, []);
 
   if (loading) {
     return <div>Loading...</div>;

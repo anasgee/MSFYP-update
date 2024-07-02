@@ -1,17 +1,23 @@
 .formcontainer {
   margin: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.388) 0px 0px 10px;  
 }
 
 .formgroup {
   margin-bottom: 1rem;
+  width: 100%;
+}
+.form{
+  width: 100%;
 }
 
-.row {
-  width: 20rem;
-}
+  .row {
+    width: 20rem;
+  }
 
 .formgroup input,
 .formgroup select {
+  width: 100%!important;
   border-radius: 0px;
   /* border: none; */
 }
@@ -19,15 +25,14 @@
 .control {
   height: 3rem;
   width: 20rem;
+  /* width: 100%; */
   font-size: 1rem;
   border-radius: 0%;
   color: #6759d1;
   background-color: white;
   border: 0px;
   box-shadow: #0000001a 0px 0px 6px;
-  /* font-size: 1rem;
-  padding: 0 1rem;
-  box-sizing: border-box; */
+  
 }
 
 .formcontrol::placeholder {

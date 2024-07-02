@@ -12,6 +12,7 @@ import CustomCard from "../../../Components/UI/CustomCard";
 import Button from "../../../Components/UI/Button";
 
 import classes from "./Project.module.css";
+import Topbar from "../../../Components/Navbar/Topbar";
 
 const Project = (props) => {
   const [pageState, setPageState] = useState({});
@@ -51,7 +52,7 @@ const Project = (props) => {
         student.designation = "Group Member";
       }
 
-      return <StudentComponent key={student.id} student={student} />;
+      return <StudentComponent key={student.id} student={student} /> ;
     })
   ) : (
     <p>No students found.</p>
@@ -137,9 +138,9 @@ const Project = (props) => {
                 </Modal.Header>
                 <Modal.Body>
                   <Form onSubmit={handleFormSubmit}>
-                    <Form.Group controlId="description">
+                    <Form.Group className="w-100" controlId="description">
                       <Form.Label>Description</Form.Label>
-                      <Form.Control
+                      <Form.Control 
                         as="textarea"
                         rows={3}
                         value={description}

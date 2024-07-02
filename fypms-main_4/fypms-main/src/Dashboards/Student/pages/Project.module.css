@@ -55,3 +55,9 @@
   align-items: center;
   margin-bottom: 2rem;
 }
+form{
+  width: 100%;
+}
+.form-group{
+  width: 100%;
+}

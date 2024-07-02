@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
+import "./GradeList.css"
 import 'react-toastify/dist/ReactToastify.css';
 import { addGrade, getGrades, updateGrade, deleteGrade } from '../../../Services/gradeService'; // Adjust the path if needed
 // import './GradeList.css'; 
@@ -125,12 +126,13 @@ const GradeList = () => {
   };
 
   return (
-    <div className="grading-system">
-      <ToastContainer />
+    <div className="grading-system ">
+     
       <h1>Grading System</h1>
+      
       <form className='grading_form' onSubmit={handleFormSubmit}>
-        <div>
-          <input
+       {/* <div className='d-flex gap-3'> */}
+          <input className='input'
             type="text"
             name="name"
             placeholder="Enter Student Name"
@@ -138,9 +140,8 @@ const GradeList = () => {
             onChange={handleNewStudentChange}
             required
           />
-        </div>
-        <div>
-          <input
+       
+          <input className='input'
             type="text"
             name="rollNumber"
             placeholder="Enter Roll Number"
@@ -148,9 +149,10 @@ const GradeList = () => {
             onChange={handleNewStudentChange}
             required
           />
-        </div>
-        <div>
+       {/* </div> */}
+       {/* <div className='d-flex gap-3'> */}
           <select
+          className='p-3 w-100'
             name="session"
             value={newStudent.session}
             onChange={handleNewStudentChange}
@@ -162,9 +164,9 @@ const GradeList = () => {
             <option value="2022-2026">2022-2026</option>
             <option value="2023-2027">2023-2027</option>
           </select>
-        </div>
-        <div>
+      
           <select
+          className='p-3 w-100'
             name="class"
             value={newStudent.class}
             onChange={handleNewStudentChange}
@@ -176,9 +178,9 @@ const GradeList = () => {
             <option value="BSCS_MOR">BSCS MOR</option>
             <option value="BSCS_EVE">BSCS EVE</option>
           </select>
-        </div>
-        <div className='grading_input'>
-          <input
+       {/* </div> */}
+       {/* <div className='d-flex gap-3'> */}
+          <input className='input'
             type="number"
             name="del1"
             placeholder="Enter Deliverable 1 Grades"
@@ -186,9 +188,8 @@ const GradeList = () => {
             onChange={handleNewStudentChange}
             required
           />
-        </div>
-        <div>
-          <input
+       
+          <input className='input'
             type="number"
             name="del2"
             placeholder="Enter Deliverable 2 Grades"
@@ -196,9 +197,7 @@ const GradeList = () => {
             onChange={handleNewStudentChange}
             required
           />
-        </div>
-        <div>
-          <input
+          <input className='input'
             type="number"
             name="del3"
             placeholder="Enter Final Grades"
@@ -206,8 +205,12 @@ const GradeList = () => {
             onChange={handleNewStudentChange}
             required
           />
-        </div>
-        <button type="submit">{isEditing ? 'Update Student' : 'Add Student'}</button>
+          
+          
+          
+         
+       <br/>
+        <button className='w-100' type="submit">{isEditing ? 'Update Student' : 'Add Student'}</button>
       </form>
 
       <h2>Student Grades</h2>
@@ -234,6 +237,7 @@ const GradeList = () => {
           );
         })}
       </div>
+      <ToastContainer />
     </div>
   );
 };

@@ -9,5 +9,8 @@
 }
 
 .button:hover {
-  box-shadow: #6759d1 0px 0px 6px;
+  box-shadow: #007bff  0px 0px 6px !important;
+  /* box-shadow: #6759d1 0px 0px 6px; */
+  background-color: #6759d1  0px 0px 6px !important;
+
 }

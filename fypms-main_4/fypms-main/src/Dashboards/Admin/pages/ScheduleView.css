@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* min-height: 50vh; */
     /* background: #ffffff; */
     /* padding: 2rem; */
     /* height: 100vh;    */
@@ -11,8 +12,18 @@
 }
 .div{
     background: #ffffff;
-    padding: 4rem;
+    padding: 3rem;
+    min-width: 30rem;
     border-radius: 1rem;
+    min-height: 50vh;
+
+}
+.divInner{
+    display: flex;
+    flex-direction: column;
+}
+.divInner input{
+    padding: 15px 5px;
 }
 .li{
         background: #ffffff;

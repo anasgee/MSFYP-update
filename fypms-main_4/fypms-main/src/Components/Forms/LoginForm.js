@@ -121,7 +121,7 @@ const LoginForm = () => {
 
   return (
     <div className={classes.formcontainer}>
-      <Form onSubmit={loginFormHandler}>
+      <Form className={classes.form} onSubmit={loginFormHandler}>
         <Row className={classes.row}>
           <Form.Group className={classes.formgroup} as={Col} controlId="userID">
             <Form.Control
@@ -138,7 +138,7 @@ const LoginForm = () => {
           </Form.Group>
         </Row>
 
-        <Row>
+        <Row className={classes.row}>
           <Form.Group
             className={classes.formgroup}
             as={Col}
@@ -158,7 +158,7 @@ const LoginForm = () => {
           </Form.Group>
         </Row>
 
-        <Row>
+        <Row className={classes.row}>
           <Form.Group
             className={classes.formgroup}
             as={Col}
@@ -182,7 +182,7 @@ const LoginForm = () => {
           </Form.Group>
         </Row>
 
-        <Row>
+        <Row className={classes.row}>
           <Form.Group as={Col}>
             <Form.Check
               checked={
@@ -197,7 +197,7 @@ const LoginForm = () => {
           </Form.Group>
         </Row>
 
-        <Row className="mb-3">
+        <Row className={classes.row}>
           <Col>
             <Button type="submit">Login</Button>
           </Col>

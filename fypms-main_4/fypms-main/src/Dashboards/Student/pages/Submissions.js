@@ -86,6 +86,7 @@ const Submissions = () => {
                       onChange={(e) => setFile(e.target.files[0])}
                     />
                   </div>
+                  
                   <Button
                     type="submit"
                     onClick={(event) => handleSubmit(submission.id, event)}

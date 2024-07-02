@@ -14,6 +14,7 @@ import Button from "../../../Components/UI/Button";
 import classes from "./Project.module.css";
 
 const Project = (props) => {
+  console.log(props)
   const [pageState, setPageState] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const [showModal, setShowModal] = useState(false);

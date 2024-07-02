@@ -55,10 +55,12 @@ const DetailedProjectTable = (props) => {
     <div className={classes.container}>
       <div className={classes.head}>
         <p className={classes.name}>{label}</p>
-        <Form className="d-flex" onSubmit={onSubmitSearchHandler}>
+        <Form className="d-flex w-25 flex-row
+        " onSubmit={onSubmitSearchHandler}>
           <Form.Control
-            className={`${classes.search} mr-2`}
+            className={`${classes.search} mr-2 p-2`}
             type="search"
+
             placeholder="Search Project ID/Title"
             onChange={searchHandler}
           />

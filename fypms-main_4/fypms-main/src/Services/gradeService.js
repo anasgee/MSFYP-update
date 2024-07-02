@@ -11,12 +11,14 @@ export const addGrade = async (grade) => {
   return response.data;
 };
 
+
 export const updateGrade = async (id, updatedGrade) => {
   const response = await axios.put(`${API_URL}/${id}`, updatedGrade);
   return response.data;
 };
 
-export const deleteGrade = async (id) => {
+
+export const deleteGrade = async (id, deletedGrade) => {
   const response = await axios.delete(`${API_URL}/${id}`);
   return response.data;
 };
