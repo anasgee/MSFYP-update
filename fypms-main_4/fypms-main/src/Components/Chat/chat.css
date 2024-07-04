@@ -1,0 +1,103 @@
+
+.App {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+  }
+  
+ /* chat.css */
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .chat-page{
+    width: 90%;
+    margin: auto;
+    /* background-color: #666; */
+  }
+  .chat-box{
+    max-height: 70vh!important;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .message {
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+  }
+  
+  .received {
+    align-self: flex-start;
+    background-color: #f0f0f0;
+  }
+  
+  .sent {
+    align-self: flex-end;
+    background-color: #e0f7fa;
+  }
+  
+  .message p {
+    margin: 0;
+  }
+  
+  .time {
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+  
+  .message.teacher {
+    background-color: #f0f0f0;
+  }
+  
+  .message.student {
+    background-color: #e0f7fa;
+  }
+  
+  .message p {
+    margin: 0;
+  }
+  
+  .time {
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+  .message-input {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    width: 80%;
+    gap: 10px;
+    margin: auto;
+    /* margin-top: 10px; */
+  }
+  
+  .message-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 1em;
+  }
+  
+  .message-input .button {
+    /* padding: 15px 15px; */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    width: 100px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .message-input button:hover {
+    background-color: #0056b3;
+  }
+  

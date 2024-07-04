@@ -91,6 +91,7 @@ export const ADMIN_ROUTES = [
   icon:<MdOutlinePlagiarism />
 
 },
+
   {
     path: "/settings",
     name: "Settings",
@@ -151,6 +152,11 @@ export const TEACHER_ROUTES = [
   icon:<MdOutlinePlagiarism />
 
 },
+{ path:"/message",
+  name:"chat",
+  icon:<MdOutlinePlagiarism />
+
+},
   {
     path: "/settings",
     name: "Settings",
@@ -204,6 +210,11 @@ export const STUDENT_ROUTES = [
   icon:<FaBullseye />},
   { path:"/plagiarism",
   name:"Check Plagiarism",
+  icon:<MdOutlinePlagiarism />
+
+},
+{ path:"/message",
+  name:"chat",
   icon:<MdOutlinePlagiarism />
 
 },

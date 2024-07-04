@@ -13,6 +13,7 @@ import Notifications from "./pages/Notifications";
 import ScheduleForm from "../Admin/pages/ScheduleForm";
 import ScheduleView from "../Admin/pages/ScheduleView";
 import Plagiarism from "../../Components/Plagiarism/Plagiarism"
+import Message from "../../Components/Chat/Message"
 
 const TeacherDashboard = (props) => {
   const { input } = useSelector((state) => state.login);
@@ -45,6 +46,10 @@ const TeacherDashboard = (props) => {
         <Route
           path="/notifications"
           element={<Notifications userId={user.id} userName={user.name} />}
+        />
+         <Route
+          path="/message"
+          element={<Message userId={user.id} userName={user.name} />}
         />
         <Route
           path="/scheduleview"
