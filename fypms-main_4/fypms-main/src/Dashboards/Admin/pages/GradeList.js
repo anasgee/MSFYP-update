@@ -65,7 +65,9 @@ const GradeList = () => {
         const updatedGrade = await updateGrade(currentStudentId, newStudent);
         setStudents(students.map(student => 
           student._id === currentStudentId ? updatedGrade : student
+          
         ));
+        toast.success("Grade Updated Successfully")
         setIsEditing(false);  
         setCurrentStudentId(null);
       }
@@ -232,7 +234,7 @@ const GradeList = () => {
                 <li>Grade: {grade}</li>
               </div>
               <button onClick={() => editStudent(student._id)}>Edit</button>
-              <button onClick={() => removeStudent(student._id)}>Remove</button>
+              {/* <button onClick={() => removeStudent(student._id)}>Remove</button> */}
             </div>
           );
         })}

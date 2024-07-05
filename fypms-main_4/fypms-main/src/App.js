@@ -44,7 +44,7 @@ function App() {
     }
 
     setDashboard(dashboard);
-  }, [auth, auth.uid, input]);
+    }, [auth, auth.uid, input]);
 
   const [dashboard, setDashboard] = useState(null);
 

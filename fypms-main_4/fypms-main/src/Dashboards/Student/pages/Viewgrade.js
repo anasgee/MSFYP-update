@@ -34,9 +34,7 @@ const ViewGrades = ({ rollNumber }) => {
   return (
     <div className="student-grades">
       <ToastContainer />
-      <h1>My Grades</h1>
-
-
+      <h1 className='mb-5'>My Grades</h1>
       <div className='grade'>
         <div className='gradeHeading'>
             <p>Name</p>

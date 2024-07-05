@@ -1,23 +1,22 @@
 import {
   MdDashboard,
-  // MdOutlineManageSearch,
-  // MdApps,
   MdOutlineSettingsSuggest,
-  // MdOutlineVoiceChat,
   MdOutlineEventNote,
   MdOutlineAssessment,
 } from "react-icons/md";
 import { SiGoogleclassroom } from "react-icons/si";
 import { AiOutlineSchedule } from "react-icons/ai";
 import { ImUpload2 } from "react-icons/im";
-// import { HiUserAdd } from "react-icons/hi";
 import { TbNotebook } from "react-icons/tb";
 import { BsPersonSquare } from "react-icons/bs";
 import { GiSpaceShuttle } from "react-icons/gi";
-import { MdGrade } from "react-icons/md";
 import { FaBullseye } from "react-icons/fa";
 import { MdOutlineSchedule } from "react-icons/md";
 import { MdOutlinePlagiarism } from "react-icons/md";
+import { MdGrading } from "react-icons/md";
+
+import { CiChat1 } from "react-icons/ci";
+
 
 
 
@@ -68,13 +67,13 @@ export const ADMIN_ROUTES = [
   {
     path:"/gradelist",
     name:"Mange Grades",
-    icon:<MdGrade />
+    icon:<MdGrading />
   },
-  {
-    path:"/maincomponent",
-    name:"Grades",
-    icon:<MdGrade />
-  },
+  // {
+  //   path:"/maincomponent",
+  //   name:"Grades",
+  //   icon:<MdGrade />
+  // },
  { path:"/scheduleform",
   name:"Set Schedule",
   icon:<MdOutlineSchedule />
@@ -154,7 +153,7 @@ export const TEACHER_ROUTES = [
 },
 { path:"/message",
   name:"chat",
-  icon:<MdOutlinePlagiarism />
+  icon:<CiChat1 />
 
 },
   {
@@ -203,7 +202,7 @@ export const STUDENT_ROUTES = [
   {
     path: "/See-grades",
     name: "See Grades",
-    icon: <TbNotebook />,
+    icon: <MdGrading />,
   },
   { path:"/scheduleview",
   name:"See Teacher Schedule",
@@ -215,7 +214,7 @@ export const STUDENT_ROUTES = [
 },
 { path:"/message",
   name:"chat",
-  icon:<MdOutlinePlagiarism />
+  icon:<CiChat1 />
 
 },
   {
