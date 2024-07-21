@@ -27,7 +27,7 @@ import SearchGrades from "./pages/search";
 const AdminDashboard = (props) => {
   const { input } = useSelector((state) => state.login);
   const user = {
-    name: input.userName,
+    name: "Anas",
     userType:props.userType
 
   };
